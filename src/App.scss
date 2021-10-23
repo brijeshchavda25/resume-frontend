@@ -1,0 +1,118 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+.sections {
+  overflow: hidden;
+}
+
+.overflow-wrap {
+  overflow-x: hidden;
+}
+.bg-img {
+  background-image: url('https://spotlight.thecodingbull.com/wp-content/uploads/sites/7/2016/12/Online-Marketing.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .middle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: $screen-md-min) {
+      width: 300px;
+    }
+    .text {
+      font-size: 32pt;
+      line-height: 36pt;
+      color: rgb(234, 231, 225);
+      text-align: center;
+      margin-bottom: 15px;
+      @media screen and (max-width: $screen-md-min) {
+        font-size: 18pt;
+        line-height: 20pt;
+      }
+      .highlight {
+        font-family: 'Raleway-semibold';
+        color: rgb(204, 24, 98);
+      }
+    }
+    .button {
+      border: 2px solid #fff;
+      box-sizing: inherit;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 13pt;
+      padding: 10px 20px;
+      transition: all 0.5s;
+      color: rgb(234, 231, 225);
+      .arrow-position {
+        margin-right: 10px;
+      }
+      &:hover {
+        background: #04c2c9;
+      }
+    }
+  }
+  .flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar-position {
+    height: 43px;
+    text-align: left;
+    padding: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1;
+    @media screen and (max-width: $screen-md-min) {
+      height: 50px;
+    }
+    .nav-button {
+      background-color: white !important;
+      margin: auto 0;
+      position: absolute;
+      right: 5vw;
+      top: 5px;
+    }
+    .item-list {
+      @media screen and (max-width: $screen-md-min) {
+        position: absolute;
+        top: 49px;
+        width: 100%;
+        background-color: rgb(42, 47, 50);
+      }
+    }
+    .nav-bar-items {
+      flex-direction: row !important;
+      cursor: pointer;
+      @media screen and (max-width: $screen-md-min) {
+        flex-direction: column !important;
+        height: 220px;
+      }
+      .active {
+        .nav-link {
+          color: rgb(204, 24, 98);
+        }
+      }
+    }
+    .nav-link-color {
+      color: white;
+      text-transform: uppercase;
+      margin: 0 20px;
+    }
+  }
+}

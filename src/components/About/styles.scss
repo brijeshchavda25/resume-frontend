@@ -1,0 +1,71 @@
+$screen-sm-min: 576px;
+.about-container {
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 70px 0 30px 0;
+	width: 100%;
+	.header {
+		font-size: 30pt;
+		text-align: center;
+		text-decoration: underline;
+		text-underline-position: under;
+		margin-bottom: 70px;
+	}
+	.profile-container {
+		.align-center {
+			justify-content: center;
+		}
+		.about-col {
+			@media screen and (max-width: $screen-sm-min) {
+				margin-bottom: 40px;
+			}
+		}
+		.profile-image {
+			height: 300px;
+			width: 300px;
+			border-radius: 50%;
+		}
+		.bold {
+			margin: 15px 0;
+			font-size: 18pt;
+			font-weight: 700;
+		}
+		.link {
+			color: rgb(0, 139, 196);
+			cursor: pointer;
+		}
+		.bar-container {
+			background-color: rgb(220, 216, 208);
+			color: rgb(92, 92, 92);
+			.bar-size {
+				height: 30px;
+				margin-bottom: 12px;
+				.bar-color {
+					background-color: rgb(0, 145, 150);
+					height: inherit;
+					color: rgb(234, 231, 225) !important;
+					font-size: 12pt;
+					font-weight: bold;
+					line-height: 30px;
+				}
+				.percentage {
+					display: flex;
+					justify-content: flex-end;
+					width: 100%;
+					align-items: center;
+					.percentage-text {
+						margin-right: 10px;
+						font-size: 12pt;
+					}
+				}
+			}
+		}
+	}
+}
+.flex {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

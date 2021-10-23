@@ -1,0 +1,121 @@
+$screen-sm-min: 576px;
+.contact-with-footer {
+	padding-top: 130px;
+	.contact-page {
+		background-color: rgb(36, 41, 44);
+		padding-bottom: 130px;
+		.contact-container {
+			box-sizing: border-box;
+			margin: 0 auto;
+			max-width: 1200px;
+			padding: 0 10px;
+			width: 100%;
+			margin-top: 70px;
+			color: rgb(234, 231, 225);
+			.header {
+				font-size: 30pt;
+				text-align: center;
+				text-decoration: underline;
+				text-underline-position: under;
+				margin-bottom: 70px;
+			}
+			.ask-question {
+				text-align: center;
+				color: rgb(4, 175, 181);
+				font-weight: 600;
+				font-size: 12pt;
+			}
+			.contact-form {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 40px auto 0 auto;
+				.input-field {
+					width: 50%;
+					background: #1e242c;
+					border: 0;
+					box-sizing: border-box;
+					color: #fff;
+					display: block;
+					font-size: 12pt;
+					margin-bottom: 3px;
+					outline: none;
+					padding: 10px 15px;
+					@media screen and (max-width: $screen-sm-min) {
+						width: 90%;
+					}
+				}
+				.text-area {
+					margin-bottom: 5px;
+					min-height: 150px;
+				}
+				.button {
+					background: transparent;
+					color: #fff;
+					float: right;
+					font-size: 12pt;
+					margin: 5px 0 0 0;
+					outline: 0;
+					padding: 10px 30px;
+					border: 2px solid #fff;
+					cursor: pointer;
+					&:hover:not([disabled])  {
+						background: #04c2c9;
+					}
+				}
+				.error {
+					color: red;
+				}
+				.success {
+					color: green;
+				}
+			}
+		}
+	}
+	.footer {
+		background: #1b242f;
+		padding: 70px 0 50px 0;
+		position: relative;
+		.up-icon {
+			background: #e31b6d;
+			cursor: pointer;
+			font-size: 30pt;
+			height: 50px;
+			left: 0;
+			line-height: 40pt;
+			margin: 0 auto;
+			position: absolute;
+			right: 0;
+			top: -25px;
+			width: 47px;
+			&::before {
+				padding-left: 10px;
+			}
+		}
+		.flex-social-container {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			.icon {
+				background: #262f38;
+				cursor: pointer;
+				font-size: 18pt;
+				height: 55px;
+				margin: 0 15px;
+				overflow: hidden;
+				position: relative;
+				text-align: center;
+				width: 55px;
+				.fa {
+					font-size: 40px;
+					color: rgb(234, 231, 225);
+				}
+			}
+			.flex-social {
+				align-items: center;
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+}

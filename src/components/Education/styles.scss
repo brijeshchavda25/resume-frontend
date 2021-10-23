@@ -1,0 +1,46 @@
+$screen-sm-min: 576px;
+.education-container {
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 70px 10px 30px 10px;
+	width: 100%;
+	.header {
+		font-size: 30pt;
+		text-align: center;
+		text-decoration: underline;
+		text-underline-position: under;
+		margin-bottom: 70px;
+	}
+	.card-container {
+		display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+		.card-size {
+			width: 100%;
+            text-align: center;
+            background-color: rgb(30, 34, 37);
+			@media screen and (min-width: $screen-sm-min) {
+				width: 60%;
+            }
+            .card-header {
+				font-size: 22pt;
+				font-weight: bold;
+                @media screen and (max-width: $screen-sm-min) {
+                    font-size: 18pt;
+                    line-height: 30px;
+                }
+            }
+            .text {
+                color: rgb(234, 231, 225);
+                .secondary-text {
+                    font-size: 12pt;
+                    font-style: italic;
+                    @media screen and (max-width: $screen-sm-min) {
+                        font-size: 11pt;
+                    }
+                }
+            }
+		}
+	}
+}
