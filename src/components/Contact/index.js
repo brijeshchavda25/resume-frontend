@@ -39,7 +39,7 @@ const Contact = ({handleUpClick}) => {
     if (Object.keys(errorsObj).length) {
       setErrors(errorsObj);
     } else {
-      const url = 'https://intense-cliffs-68381.herokuapp.com/send-mail';
+      const url = 'https://resume-backend-node.herokuapp.com/send-mail';
       // const url = 'http://localhost:4000/send-mail';
       const object = {
         email,
