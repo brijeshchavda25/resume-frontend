@@ -48,7 +48,7 @@ const Contact = ({handleUpClick}) => {
       };
       setLoading(true);
       axios
-        .post(url, object)
+        .post(url, object, { headers: { "Access-Control-Allow-Origin": "*" } })
         .then((res) => {
           const {success, message: resMessage} = res.data;
           if (success) {
